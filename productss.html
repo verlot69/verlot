@@ -16,14 +16,28 @@
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
     }
-    nav a {
-    text-decoration: none;
-    color: white;
-    background: #9C5907;
-    padding: 10px 20px;
-    border-radius: 8px; 
-    font-weight: bold;
-    } 
+    nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: #9C5907;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #9C5907;
+            color: white;
+        }
     .title {
       text-align: center;
       padding: 20px;
@@ -101,7 +115,15 @@
     .card button:hover {
       background-color: black;
     }
+ nav {
+                gap: 8px;
+                padding: 15px 5px;
+            }
 
+            nav a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
     /* Tablet: two products per row */
     @media (max-width: 900px) {
       .cont {
@@ -235,8 +257,5 @@
       );
     }
   </script>
- <nav>
-        <a href="homepage.html"> Home</a>
-    </nav>
 </body>
 </html>
