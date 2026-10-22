@@ -6,21 +6,28 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
-nav {
-display: flex;
-justify-content: center;
-gap: 15px;
-padding: 20px;
- color: white;
-}
-nav a {
-text-decoration: none;
-color: white;
-background: #9C5907;
-padding: 10px 20px;
-border-radius: 8px; 
-font-weight: bold;
-}
+ nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 20px;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            background: #9C5907;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            background: #9C5907;
+            color: white;
+        }
 * {
   box-sizing: border-box;
 }
@@ -68,7 +75,15 @@ input[type=submit]:hover {
   display: table;
   clear: both;
 }
+ nav {
+                gap: 8px;
+                padding: 15px 5px;
+            }
 
+            nav a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
   .column, input[type=submit] {
@@ -80,9 +95,12 @@ input[type=submit]:hover {
 </style>
 </head>
 <body>
-
-<h2>Omad's Coffee Contact</h2>
-
+ <nav>
+        <a href="homepage.html"> Home</a>
+        <a href="about.html"> About</a>
+        <a href="contact.html">Contact</a>
+        <a href="productss.html">Product</a>
+    </nav>
 <div class="container">
   <div style="text-align:center">
     <h2>Contact Us</h2>
