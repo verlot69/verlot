@@ -1,7 +1,9 @@
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
         * {
@@ -12,9 +14,10 @@
             font-family: Arial, sans-serif;
             background-image: url("kape.jpg");
             background-repeat: no-repeat;
-            background-size:100%;
+            background-size: cover;
             background-position: center;
-            height: 400%;
+            background-attachment: fixed;
+            min-height: 100vh;
             color: white;
         }
 
@@ -25,6 +28,7 @@
             gap: 15px;
             padding: 20px;
             color: white;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -50,6 +54,7 @@
             align-items: center;
             text-align: center;
             background: rgba(0, 0, 0, 0.2);
+            padding: 15px;
         }
 
         h1 {
@@ -62,6 +67,37 @@
             font-size: 25px;
             font-weight: bold;
             text-shadow: 1px 1px 4px black;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 600px) {
+            body {
+                background-attachment: scroll;
+            }
+
+            nav {
+                gap: 8px;
+                padding: 15px 5px;
+            }
+
+            nav a {
+                padding: 8px 12px;
+                font-size: 14px;
+            }
+
+            .container {
+                height: auto;
+                min-height: 80vh;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
         }
     </style>
 </head>
@@ -77,13 +113,16 @@
 
     <div class="container">
         <h1>WELCOME To Omad's Coffee shop</h1>
-        <p> Welcome to our little coffee shop, where great coffee meets cozy vibes.</p> 
+        <p> Welcome to our little coffee shop, where great coffee meets cozy vibes.</p>
         <p> We’re here to serve you freshly brewed coffee, delicious treats, and </p>
         <p> a relaxing space to unwind. Come in, take a break, and enjoy every sip!
         </p>
     </div>
-<nav>
-<a href="index.html">Log out</a>
-</nav>
+
+    <nav>
+        <a href="index.html">Log out</a>
+    </nav>
+
 </body>
 </html>
+```
